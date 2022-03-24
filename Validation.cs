@@ -16,6 +16,7 @@ namespace UserRegistrationReflection
         public string RegexPasswordRule1 = "^[a-zA-Z]{8,}$";
         public string RegexPasswordRule2 = "^[A-Z]+[a-zA-Z]{8,}$";
         public string RegexPasswordRule3 = "(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*()_+]).{8,}$";
+
         public void FirstName(string firstName)
         {
             if (Regex.IsMatch(firstName, RegexName) == false)
